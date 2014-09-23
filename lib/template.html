@@ -1,0 +1,16 @@
+<!-- bdo-events.html -->
+<table>
+  <thead>
+    <tr>
+      <th ng-transclude colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="event in events">
+      <td><icon name="{{event.icon}}"></icon></td>
+      <td>{{event.title}}</td>
+      <td class="align-right"><user-photo title="{{event.by.name}}" email="{{event.by.email}}"></user-photo></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End bdo-events.html -->
